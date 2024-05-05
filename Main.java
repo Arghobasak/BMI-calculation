@@ -2,15 +2,16 @@ import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+    System.out.print("Male and Female BMI calculator!");
+
+    System.out.println();
+    
     int age;
     double height, weight, BMI1, BMI2;
-
-    System.out.print("Enter your age: ");
+    System.out.print("\n\nEnter your age: ");
     age = input.nextInt();
-
     System.out.print("Enter your height: ");
     height = input.nextDouble();
-
     System.out.print("Enter your weight: ");
     weight = input.nextDouble();
 
@@ -19,82 +20,63 @@ public class Main {
 
     System.out.println();
 
-    System.out.println("Your normal BMI is (M): "+BMI1+" calory");
-    System.out.println("Your normal BMI is (F): "+BMI2+" calory");
+    System.out.println("BMI is (Male): "+BMI1+ " calory");
+    System.out.println("BMI is (Female): "+ BMI2+ " calory");
+
+    char work1, work2, work3, work4, work5;
 
     System.out.println();
 
-    char ch1, ch2, ch3, ch4, ch5;
-    System.out.print("Worke out? (y/n): ");
-    ch1 = input.next().charAt(0);
-    System.out.print("Light work out, weekly 2-3 days played? (y/n): ");
-    ch2 = input.next().charAt(0);
-    System.out.print("Work out, weekly 2-3 days very played? (y/n): ");
-    ch3 = input.next().charAt(0);
-    System.out.print("Worke out, weekly everydays very played? (y/n): ");
-    ch4 = input.next().charAt(0);
-    System.out.print("Very hard work, very rub and played? (y/n): ");
-    ch5 = input.next().charAt(0);
-
-    double work1;
-    work1 = BMI1 * 1.2;
-    double work2;
-    work2 = BMI1 * 1.375;
-    double work3;
-    work3 = BMI1 * 1.55;
-    double work4;
-    work4 = BMI1 * 1.725;
-    double work5;
-    work5 = BMI1 * 1.9;
-
-    double workF1;
-    workF1 = BMI2 * 1.2;
-    double workF2;
-    workF2 = BMI2 * 1.375;
-    double workF3;
-    workF3 = BMI2 * 1.55;
-    double workF4;
-    workF4 = BMI2 * 1.725;
-    double workF5;
-    workF5 = BMI2 * 1.9;
+    System.out.print("Do you work out(y/n)?: ");
+    work1 = input.next().charAt(0);
+    System.out.print("Do you light work out and weekly 2-3 days playing (y/n)?: ");
+    work2 = input.next().charAt(0);
+    System.out.print("Do you work out and weekly 2-3 very playing (y/n)?: ");
+    work3 = input.next().charAt(0);
+    System.out.print("Do you work out and weekly everyday very playing (y/n)?: ");
+    work4 = input.next().charAt(0);
+    System.out.print("Do you hardworkout and very runing, playing (y/n)?: ");
+    work5 = input.next().charAt(0);
 
     System.out.println();
 
-    if (ch1 == 'y') {
-      System.out.println("Your corect BMI is (M): "+work1+" calory");
+    if (work1 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI1 * 1.2 + " calory");
     }
-    else if (ch2 == 'y') {
-      System.out.println("Your corect BMI is (M): "+work2+" calory");
+    else if (work1 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI2 * 1.2 + " calory");
     }
-    else if (ch3 == 'y') {
-      System.out.println("Your corect BMI is (M): "+work3+" calory");
+    else if (work2 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI1 * 1.375 + " calory");
     }
-    else if (ch4 == 'y') {
-      System.out.println("Your corect BMI is (M): "+work4+" calory");
+    else if (work2 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI2 * 1.375 + " calory");
     }
-    else if (ch5 == 'y') {
-      System.out.println("Your corect BMI is (M): "+work5+" calory");
+    else if (work3 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI1 * 1.55 + " calory");
     }
-    else {
-      System.out.print("Sorry, You are a not human !!");
+    else if (work3 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI2 * 1.55 + " calory");
     }
-    if (ch1 == 'y') {
-      System.out.print("Your corect BMI is (F): "+workF1+" calory");
+    else if (work4 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI1 * 1.725 + " calory");
     }
-    else if (ch2 == 'y') {
-      System.out.print("Your corect BMI is (F): "+workF2+" calory");
+    else if (work4 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI2 * 1.725 + " calory");
     }
-    else if (ch3 == 'y') {
-      System.out.print("Your corect BMI is (F): "+workF3+" calory");
+    else if (work5 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI1 * 1.9 + " calory");
     }
-    else if (ch4 == 'y') {
-      System.out.print("Your corect BMI is (F): "+workF4+" calory");
-    }
-    else if (ch5 == 'y') {
-      System.out.print("Your corect BMI is (F): "+workF5+" calory");
+    else if (work5 == 'y') {
+      System.out.print("\n\nYour corect BMI is: "+ BMI2 * 1.9 + " calory");
     }
     else {
-      System.out.print("Sorry, You are a not human !!");
+      System.out.print("Okay");
     }
+
+    System.out.println();
+
+    System.out.print("\n\nThank you for using our BMI calculator !!");
+    
   }
 }
